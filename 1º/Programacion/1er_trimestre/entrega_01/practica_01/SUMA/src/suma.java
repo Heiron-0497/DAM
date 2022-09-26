@@ -9,6 +9,7 @@ public class suma {
         a= sc.nextInt();
         System.out.println("Escriba el número b: ");
         b= sc.nextInt();
+        sc.close();
 
         suma = a + b;
 

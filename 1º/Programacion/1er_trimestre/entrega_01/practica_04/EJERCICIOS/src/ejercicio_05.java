@@ -13,6 +13,7 @@ public class ejercicio_05 {
 
         System.out.println("Ahora indique la altura, en centímetros, que tendrá el triángulo: ");
         h = sc.nextDouble();
+        sc.close();
 
         res = (b * h)/2;
 

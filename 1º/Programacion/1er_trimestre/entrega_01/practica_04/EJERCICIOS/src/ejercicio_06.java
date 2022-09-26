@@ -10,6 +10,7 @@ public class ejercicio_06 {
         a = sc.nextInt();
         System.out.println("Ahora introduzca el segundo número: ");
         b = sc.nextInt();
+        sc.close();
 
         resto = a % b;
 

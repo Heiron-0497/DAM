@@ -23,6 +23,7 @@ public class ejercicio_08 {
 
         System.out.println("Indique la nota del cuarto examen: ");
         d = sc.nextInt();
+        sc.close();
 
         res = (a + b + c + d) / 4;
 

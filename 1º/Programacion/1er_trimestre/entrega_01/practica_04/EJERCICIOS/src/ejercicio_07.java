@@ -20,6 +20,7 @@ public class ejercicio_07 {
         
         System.out.println("Indique la nota del tercer examen: ");
         c = sc.nextInt();
+        sc.close();
 
         res = (a + b + c) / 3;
 

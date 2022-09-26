@@ -5,7 +5,9 @@ public class incrementos {
         int i = 4;
 
         i++;
+        i--;
 
+        System.out.println(i);
         System.out.println(i);
 
     }

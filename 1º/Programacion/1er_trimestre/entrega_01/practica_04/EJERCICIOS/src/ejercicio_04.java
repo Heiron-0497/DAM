@@ -12,6 +12,7 @@ public class ejercicio_04 {
 
         System.out.println("Ahora indique la altura,en centímetros, que tendrá el rectángulo: ");
         h = sc.nextDouble();
+        sc.close();
 
         res = b * h;
 

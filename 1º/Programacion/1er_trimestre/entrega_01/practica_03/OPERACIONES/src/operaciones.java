@@ -9,6 +9,7 @@ public class operaciones {
         a= sc.nextInt();
         System.out.println("Escriba el número b: ");
         b= sc.nextInt();
+        sc.close();
 
         sum = a + b;
         res = a - b;

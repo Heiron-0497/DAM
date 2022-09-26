@@ -9,6 +9,7 @@ public class tipos {
         a= sc.nextByte();
         System.out.println("Escriba el número b: ");
         b= sc.nextByte();
+        sc.close();
 
         suma = (byte) (a + b);
 
