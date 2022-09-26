@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class ejercicio_04 {
     public static void main(String[] args) {
 
