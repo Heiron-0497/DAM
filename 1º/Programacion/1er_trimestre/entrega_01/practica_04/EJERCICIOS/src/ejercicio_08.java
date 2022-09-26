@@ -38,5 +38,8 @@ public class ejercicio_08 {
         else if((res >= 9) && (res <= 10)) {
             System.out.println("El alumno " + nom + " tiene una nota media de " + res + ". Por lo que tiene un sobresaliente en la asignatura");
         }
+        else{
+            System.out.println("Error: Los valores introducidos no son válidos");
+        }
     }    
 }
