@@ -3,25 +3,54 @@ import java.util.Scanner;
 public class ejercicio_16 {
     public static void main(String[] args) {
         
-        System.out.println("A continuación vamos a ver que estudios puede realizar un alumno en funcion de su nivel de estudios.");
+        String respuesta ="";
+
+        System.out.println("Hola buenas, bienvenido a Hamborgueseria ElPayo!");
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Indique el nivel de estudios [ESO, Bachillerato, Grado Medio, Grado Superior, Grado Universitario]: ");
-        String nivel = sc.nextLine().toLowerCase();
-        sc.close();
+        System.out.println("¿Quiere realizar un pedido? [Si / No]: ");
+        respuesta = sc.nextLine().toLowerCase();
 
-        switch(nivel) {
-            case "eso": System.out.println("El alumno puede hacer Bachillerato o un ciclo de Grado Medio");break;
+        if(respuesta.equals("no")) {
+            System.out.println("No ha pedido nada...");
+        } else if(respuesta.equals("si")) {
+            System.out.println("¿Quiere pedir una hamburguesa? [Si / No]: ");
+            respuesta = sc.nextLine().toLowerCase();
+            
+            if(respuesta.equals("no")) {
+                System.out.println("Lo sentimos pero por el momento solo tenemos hamburguesas.");
+                System.out.println("El cliente no realiza el pedido.");
+            } else if(respuesta.equals("si")) {
+                System.out.println("¿Quiere añadir más ingredientes? [Si / No]: ");
+                respuesta = sc.nextLine().toLowerCase();
 
-            case "bachillerato": System.out.println("El alumno puede hacer un ciclo de Grado Superior o ir a la Universidad");break;
+                if(respuesta.equals("no")) {
+                    System.out.println("El cliente quiere la hamburguesa sola");
+                    System.out.println("Estamos preparando su pedido...");
+                } else if(respuesta.equals("si")) {
+                    System.out.println("¿Quiere añadir tomate? [Si / No]: ");
+                    respuesta = sc.nextLine().toLowerCase();
 
-            case "grado medio": System.out.println("El alumno puede hacer un ciclo de Grado Superior");break;
+                    if(respuesta.equals("no")) {
+                        System.out.println("El cliente no quiere añadir tomate a la hamburguesa");
+                        System.out.println("Estamos preparando su pedido...");
+                    } else if(respuesta.equals("si")) {
+                        System.out.println("Perfecto! Añadiremos tomate.");
+                        System.out.println("Estamos preparando su pedido...");
+                    } else{
+                        System.out.println("Respuesta no válida! Tienes que responder Si o No.");
+                    }
 
-            case "grado superior":System.out.println("El alumno puede ir a la Universidad");break;
+                } else{
+                    System.out.println("Respuesta no válida! Tienes que responder Si o No.");
+                }
 
-            case "grado universitario": System.out.println("El alumno puede hacer un Máster");break;
+            } else{
+                System.out.println("Respuesta no válida! Tienes que responder Si o No.");
+            }
 
-            default: System.out.println("Indique un nivel de estudios válido");break;
-        }
-    }
+        } else{
+            System.out.println("Respuesta no válida! Tienes que responder Si o No.");
+        } sc.close();
+    } 
 }
