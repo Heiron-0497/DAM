@@ -9,7 +9,7 @@ public class ejercicio_26 {
        int num = sc.nextShort();
        sc.close();
 
-       for (int i=1; i <= num;i++) {
+       for (int i = 1; i <= num; i++) {
         int res = num % i;
         if (res == 0) {
             System.out.println("El número " + num + " es divisible entre " + i);
