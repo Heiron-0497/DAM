@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicio_24 {
+public class ejercicio_25 {
     public static void main(String[] args) {
         
        System.out.println("Vamos a verificar los divisores de un número.");
@@ -8,8 +8,9 @@ public class ejercicio_24 {
        System.out.println("Indique el número al cual quiere verificar sus divisores");
        short num = sc.nextShort();
        short div = 1;
+       sc.close();
 
-       while (div <= num) {
+       do {
         int res = num % div;
         if (res == 0) {
             System.out.println("El número " + num + " es divisible entre " + div);
@@ -17,6 +18,6 @@ public class ejercicio_24 {
             System.out.println("El número " + num + " no es divisible entre " + div);
         }
         div++;
-       } sc.close();
+       } while(div <= num);
     }
 }
