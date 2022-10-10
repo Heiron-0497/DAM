@@ -17,15 +17,15 @@ public class ejercicio_14 {
         }
 
         switch(cat) {
-            case 0 ->{
+            case 0 : {
                 double res = price - ((price * 15)/100);
                 System.out.println("A los usuarios de categoria " + cat + " se les aplica un 15% de descuento, por lo que el producto con precio " + price + "Euros quedaria en " + res + "Euros");break;
             }
-            case 1 ->{
+            case 1 : {
                 double res = price - ((price * 20)/100);
                 System.out.println("A los usuarios de categoria " + cat + " se les aplica un 20% de descuento, por lo que el producto con precio " + price + "Euros quedaria en " + res + "Euros");break;
             }
-            case 2 ->{
+            case 2 : {
                 double res = price - ((price * 25)/100);
                 System.out.println("A los usuarios de categoria " + cat + " se les aplica un 25% de descuento, por lo que el producto con precio " + price + "Euros quedaria en " + res + "Euros");break;
             }
