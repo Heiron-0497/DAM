@@ -1,31 +1,25 @@
 <html>
 
 <head>
-    <title>Ejercicio 03</title>
+    <title>Ejercicio 05</title>
 </head>
 
 <body>
-    <h1>Rellena tu CV</h1>
+    <h1>Datos del producto</h1>
     <form>
-        <label for="nombre">Nombre</label><br>
-        <input type="text" name="nombre" value="" id="nombre" /><br>
+        <fieldset>
+            <legend>Tipos de producto</legend>
+            <label for="nombre">Nombre del producto</label><br>
+            <input type="text" name="nombre" value="" id="nombre" /><br>
 
-        <label for="apellidos">Apellidos</label><br>
-        <input type="text" name="apellidos" value="" id="apellidos" /><br>
+            <label for="precio">Precio</label><br>
+            <input type="text" name="nombre" value="" id="precio" /><br>
 
-        <label for="contraseña">Contraseña del correo</label><br>
-        <input type="password" name="contraseña" value="" id="contraseña" /><br>
-
-        <label for="dni">DNI</label><br>
-        <input type="text" name="numero" value="si tienes de eso" id="dni" /><br>
-
-        <label>Inserta imagen</label><br>
-        <input type="file" name="Archivo" value="Examinar" /><br>
-
-        <input name="boletin" type="checkbox" value="basket" /> Suscribirme al boletín de novedades.<br>
-
-        <input name="guardar" type="button" value="Guardar Formulario" />
-        <input type="reset" value="Borrar Formulario" />
+            <label for="oculto">Oculto</label><br>
+            <input type="hidden" name="nombre" value="oculto" id="oculto" /><br>
+        </fieldset>
+        <label for="descripcion">Descripción del producto</label><br>
+        <textarea type="text" name="apellidos" value="" id="descripcion"></textarea><br>
     </form>
 </body>
 
