@@ -39,10 +39,10 @@ public class scrum_03 {
 
             System.out.println("Historia:");
             int historia[] = new int[3];
-            for (int NMhistoria = 0; NMhistoria < 3; NMhistoria++) {
-                System.out.print("Nota " + (NMhistoria + 1) + ": ");
+            for (int Nhistoria = 0; Nhistoria < 3; Nhistoria++) {
+                System.out.print("Nota " + (Nhistoria + 1) + ": ");
                 int n = sc.nextInt();
-                historia[NMhistoria] = n;
+                historia[Nhistoria] = n;
             }
             NMHistoria = (historia[0] + historia[1] + historia[2]) / historia.length;
 
