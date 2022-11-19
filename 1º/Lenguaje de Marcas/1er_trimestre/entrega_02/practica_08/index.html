@@ -11,15 +11,15 @@
             <legend>Datos básicos</legend>
 
             <label for="nombre" >Nombre</label><br />
-            <input type="text" name="nombre" value="" id="nombre" />
+            <input type="text" name="nombre" value="Charlie Araujo" id="nombre" size="50" maxlength="250"/>
             <br />
             <br />
             <label for="descripcion" >Descripción</label><br />
-            <textarea name="descripcion" value="" id="descripcion"></textarea>
+            <textarea name="descripcion" id="descripcion" cols="40" rows="5" placeholder="Introducir tus datos personales"></textarea>
             <br />
             <br />
             <label for="foto" >Foto</label>
-            <input type="file" name="Archivo" value="Examinar" /><br>
+            <input type="file" name="foto" /><br>
             <br />
             <br />
             <input type="checkbox" name="contador" />
@@ -32,7 +32,7 @@
             <legend>Datos económicos</legend>
 
             <label for="precio" >Precio</label><br />
-            <input type="text" name="precio" value="" id="precio" /> € 
+            <input type="text" name="precio" value="" id="precio" hidden="hidden" /> &euro;
 
             &nbsp;&nbsp;&nbsp;&nbsp;<label for="impuestos" >Impuestos</label>
             <select id="impuestos" name="impuestos">
@@ -45,7 +45,7 @@
             <br />
 
             <label for="promocion">Promoción</label><br />
-            <input type="radio" name="ninguno"/> Ninguno <br />
+            <input type="radio" name="ninguno" checked="checked" /> Ninguno <br />
             <input type="radio" name="transporte"/> Transporte gratuito <br />
             <input type="radio" name="descuento"/> Descuento 5% <br />
             

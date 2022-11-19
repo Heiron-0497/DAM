@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Pattern</title>  
+</head>
+<body>
+  <form>
+    <label for="numero">Escribe un número binario de ocho dígitos:</label>
+      <input type="text" id="numero" required pattern="[01]{8}">
+      <br />
+      <br />
+      <input type="submit">
+      <br />
+      <br />
+
+      <label for="numero1">Escribe un numero entero que contenga 5 digitos:</label>
+      <input type="text" id="numero1" required pattern="[0-9]{5}">
+      <br />
+      <br />
+      <input type="submit">
+      <br />
+      <br />
+
+      <label for="numero2">Escribe un número entero decimal que contenga entre 1 y 5 dígitos:</label>
+      <input type="text" id="numero" required pattern="[0-9]{1,5}">
+      <br />
+      <br />
+      <input type="submit">
+      <br />
+      <br />
+
+      <label for="patente">Escribe la patente:</label>
+      <input type="text" id="patente" required pattern="[A-Za-z]{3}[0-9]{3}">
+      <br />
+      <br />
+      <input type="submit">
+  </form>
+</body>
+</html>

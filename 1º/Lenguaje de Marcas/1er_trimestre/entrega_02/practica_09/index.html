@@ -6,7 +6,7 @@
 
 <body>
     <h1>Solicitud de reparación</h1>
-    <form action="mailto:pepito@gmail.com" >
+    <form action="mailto:pepito@gmail.com" method="post" enctype="text/plain">
         <fieldset>
             <legend>Rellene los siguientes datos</legend>
 
@@ -27,6 +27,8 @@
             <br />
 
             <textarea name="peticion" id="peticion" cols="62" rows="10"></textarea>
+            <br />
+            <input type="submit" value="Enviar">
         </fieldset>
     </form>
 </body>
