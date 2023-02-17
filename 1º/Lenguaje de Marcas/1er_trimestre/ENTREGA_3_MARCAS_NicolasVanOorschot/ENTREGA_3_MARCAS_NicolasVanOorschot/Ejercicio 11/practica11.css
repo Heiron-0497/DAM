@@ -1,0 +1,30 @@
+h1#titulo {	color:  teal;}
+
+strong { color: red; }
+
+span.destacado { color: orange; }
+ 
+h2#subtitulo { color: blue; }
+ 
+span.especial { color: purple; }
+ 
+a { color: red; }
+
+a em { color: blue; }
+
+caption { color: blue; }
+
+td { color: green; }
+
+td strong { color: orange; }
+
+th { color: red; }
+
+th.especial { color: orange; }
+ 
+#adicional p{ color: olive; }
+
+span#especial{ color: fuchsia; }
+
+#adicional a{ color: green; }
+ 

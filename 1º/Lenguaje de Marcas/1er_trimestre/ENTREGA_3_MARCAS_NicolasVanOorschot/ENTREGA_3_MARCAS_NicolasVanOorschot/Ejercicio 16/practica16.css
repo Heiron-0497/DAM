@@ -1,0 +1,29 @@
+body {
+    color: blue; 
+    background-color: rgb(186, 235, 186); 
+    font-family: Georgia, Cambria, serif; 
+    font-size: 16px;
+}
+    
+h1 {
+    color: red; 
+    font-size: 30px;
+}
+    
+h2 {
+    color: red; 
+    font-size: 20px;
+}
+    
+span {
+    color: green;
+}
+    
+strong {
+    font-size: 20px;
+}
+    
+em {
+    color: white; 
+    background-color: black
+}

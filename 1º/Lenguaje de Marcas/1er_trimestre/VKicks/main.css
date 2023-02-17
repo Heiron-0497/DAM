@@ -1,0 +1,335 @@
+
+/*Ajustes generales*/
+
+header, section, footer, aside, nav, article { 
+	display: block; 
+}
+
+body {
+    margin: 0;
+}
+
+* a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: MisLetras;
+    src: url("./fonts/titlesh1.ttf"); 
+}
+
+@font-face {
+    font-family: MisLetras2;
+    src: url("./fonts/Fuente2.ttf");
+}
+
+#envoltura {
+    background-color: #262633;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+/*Diseño del menú*/
+
+nav ul {
+    background-color:  #262633;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    z-index: 100;
+    font-family: MisLetras;
+    letter-spacing: 3px;
+}
+
+nav h1 {
+    float: left;
+    padding-right: 15px;
+    color: #900c3f;
+    position: relative;
+    top: -8px;
+    margin-left: 10px;
+}
+
+nav a h1:hover {
+    color:  #8e1b48;
+}
+
+nav ul li {
+    float: left;
+}
+
+    nav ul li:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 0.875em 2.938em;
+        }
+
+            nav ul li a:hover {
+                color:  #e0e0e0;
+                text-decoration: underline;
+                text-decoration-color: #900c3f;
+                text-decoration-thickness: 3px;
+                text-decoration-style: dashed;
+            }
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #900c3f;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dashed;
+}
+
+nav img {
+    float: left;
+    position: relative;
+    top: -0.188em;
+    height: 70px;
+    width: 73px;
+    border-radius: 100px;
+    padding-left: 8px;
+    padding-right: 2px;
+}
+        nav img:hover {
+            border: 0px;
+            border-radius: 100px;
+            height: 72px;
+            width: 75px;
+            padding-right: 0px;
+        }
+
+#sugerencias {
+    border-style: none;
+    float: right;
+}
+
+    #sugerencias a {
+        padding: 0.875em 0.938em;
+    }
+
+        #sugerencias a:hover {
+            color:  #e0e0e0;
+        }
+
+
+
+
+/*Diseño del encabezado de presentación*/
+
+div #fondo {
+    background: url(./image/background/cover-inicio.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0% 0% 20%;
+}
+
+article {
+    background-color: rgba(19, 19, 19, 0.8);
+    position: relative;
+    margin: 0% 25%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+    #presentacion h1 {
+        padding-top: 10%;
+        font-size: 40px;
+        color: #900c3f;
+        text-align: center;
+        font-family: MisLetras;
+    }
+
+    #presentacion p {
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        padding: 3% 4% 4%;
+        line-height: 40px;
+    }
+
+
+
+/*Diseño del contenedor principal*/
+
+#main {
+    top: -75px;
+    position: relative;
+}
+
+
+div #buscador {
+    float: left;
+    width: 20%;
+}
+    
+    #busquedas {
+        color: white;
+        border-radius: 20px;
+        background-color:  #15151d;
+        margin: 3%;
+        height: 30%;
+        width: 80%;
+        padding: 6%;
+    }
+
+    #busquedas h3 {
+        font-size: 15px;
+    }
+    
+    #busquedas ul {
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+        list-style: none;
+    }
+    
+        #busquedas ul li a, #busquedas ul li a:visited {
+            color: #900c3f;
+        }
+    
+        #busquedas ul li a:hover {
+            color: white;
+        }
+
+div #contenido {
+    float: right;
+    display: block;
+    width: 80%;
+}
+
+    #entradas {
+        float: left;
+        clear: none;
+        width: 80%;
+    }
+
+        #entradas a {
+            display: block;
+            border-radius: 20px;
+            background-color:  #15151d;
+            margin: 1% 1% 2%;
+            height: 25%;
+            width: 90%;
+            padding: 3%;
+        }
+
+        #contenido div h2 {
+            color: #900c3f;
+            margin: 0 0 3%;
+            text-align: center;
+            font-size: 35px;
+            font-family: MisLetras2;
+        }
+        
+        #contenido div img {
+            width: 60%;
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+        }
+        
+        #contenido div ul {
+            margin: 2% auto;
+            display: block;
+        }
+
+        #contenido div ul li {
+            list-style-type: none;
+            font-size: 18px;
+            margin: 2% auto;
+            width: 90%;
+            color: white;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #contenido #lateral {
+            float: right;
+            width: 20%;
+            display: block;
+        }
+
+        #lateral #comentarios {
+            height: 650px;
+            width: 97%;
+            margin: 3% 1% 0;
+            border-radius: 20px;
+            background-color: #15151d;
+            overflow-x: hidden;
+        }
+
+        aside div.comentarios_blog {
+            overflow-y: scroll;
+            float: right;
+            width: 95%;
+            height: 70%;
+        }
+        
+        #lateral #comentarios h2 {
+            font-family: MisLetras2;
+            color: white;
+            font-size: 20px;
+            margin: 8% auto;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        #lateral #comentarios h3{
+            color: #900c3f;
+            padding: 2% 0 6%;
+            margin: 0;
+            font-size: 12px;
+        }
+        
+        #lateral #comentarios p{
+            padding: 0 2% 3%;
+            color: white;
+            text-align: justify;
+            font-size: 10px;
+            line-height: 20px;
+            margin: 0;
+        }
+
+
+
+/*Diseño del pie de página*/
+
+footer {
+    margin: 0;
+    clear: both;
+    padding: 0.5%;
+    text-align: center;
+    border-top: 2px solid #900c3f;
+    font: 10px verdana, sans-serif; 
+    color: #FFFFFF
+}
+
+    footer p {
+        width: 100%;
+        color: white;
+        float: left;
+        margin: 0 auto 2%;
+        font: 12px verdana, sans-serif;
+    }
+
+    img.redessociales {
+        margin-top: 1% auto 0;
+        width: 2%;
+        height: 2%;
+        padding: 1% 2%;
+    }

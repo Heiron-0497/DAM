@@ -9,14 +9,28 @@ body {
     margin: 0;
 }
 
+* a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: MisLetras;
+    src: url("./fonts/titlesh1.ttf"); 
+}
+
+@font-face {
+    font-family: MisLetras2;
+    src: url("./fonts/Fuente2.ttf");
+}
+
 #envoltura {
-    background-color: #162140;
+    background-color: #262633;
     margin: 0;
     overflow-x: hidden;
 }
 
 nav ul {
-    background-color:  #373130;
+    background-color:  #262633;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,52 +48,52 @@ nav img {
     float: left;
     position: relative;
     top: -0.188em;
-    height: 72px;
-    width: 75px;
+    height: 70px;
+    width: 73px;
     border-radius: 100px;
+    padding-left: 8px;
     padding-right: 2px;
 }
 
     nav img:hover {
         border: 0px;
         border-radius: 100px;
-        height: 74px;
-        width: 77px;
+        height: 72px;
+        width: 75px;
         padding-right: 0px;
     }
 
 nav h1 {
     float: left;
     padding-right: 15px;
-    color: #c70039;
+    color: #900c3f;
     position: relative;
     top: -8px;
     margin-left: 10px;
 }
 
 nav a h1:hover {
-    color:  #c63e65;
+    color:  #8e1b48;
 }
 
 nav ul li {
     float: left;
 }
 
-    li:hover {
+    nav ul li:hover {
         background-color: rgba(0, 0, 0, 0.2);
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
-        li a {
+        nav ul li a {
             display: block;
             color: white;
             text-align: center;
-            text-decoration: none;
             padding: 0.875em 2.938em;
         }
 
-            li a:hover {
+            nav ul li a:hover {
                 color:  #e0e0e0;
             }
 
@@ -87,39 +101,37 @@ nav ul li {
     margin-left: 0.625em;
 }
 
-.sugerencias {
+#sugerencias {
     border-style: none;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     float: right;
-    background-color: #c70039;
+    background-color: #900c3f;
 }
 
-.sugerencias a {
+#sugerencias a {
     padding: 0.875em 0.938em;
 }
 
-.sugerencias a:hover {
-    background-color:  #c63e65;
+#sugerencias a:hover {
+    background-color:  #8e1b48;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color:  #e0e0e0;
 }
 
 .active {
-    background-color: #c70039;
+    background-color: #900c3f;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .active:hover {
-    background-color:  #c63e65;
+    background-color:  #8e1b48;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    color:  #ffa356;
+    color:  #e0e0e0;
 }
 
-div.fondo {
+div #fondo {
     background: url(./image/background/cover-inicio.jpg) no-repeat fixed;
     background-size: cover;
     width: 100%;
@@ -127,7 +139,7 @@ div.fondo {
     padding: 0% 0% 20%;
 }
 
-article.presentacion {
+article #presentacion {
     background-color: rgba(19, 19, 19, 0.8);
     position: relative;
     margin: 0% 25%;
@@ -135,15 +147,15 @@ article.presentacion {
     border-bottom-right-radius: 14px;
 }
 
-.presentacion h1 {
+#presentacion h1 {
     padding-top: 10%;
     font-size: 40px;
-    color: #c70039;
+    color: #900c3f;
     text-align: center;
     font-family: MisLetras;
 }
 
-.presentacion p {
+#presentacion p {
     font-size: 22px;
     color: white;
     text-align: center;
@@ -151,39 +163,81 @@ article.presentacion {
     line-height: 40px;
 }
 
-div.entradas {
-    margin: 0% 14%;
+div #buscador {
+    float: left;
+    width: 25%;
 }
 
-.entradas a div {
-    display: block;
+#busquedas {
+    color: white;
     border-radius: 20px;
-    background-color:  rgba(19, 19, 19, 1);
-    float: left;
-    margin: 2% 2%;
-    height: 50%;
-    width: 45%;
-    padding-bottom: 14%;
+    background-color:  #15151d;
+    margin: 3%;
+    height: 30%;
+    width: 80%;
+    padding: 6%;
     top: -110px;
     position: relative;
 }
 
-.entradas div h2 {
-    color: #3853a5;
+#busquedas h3 {
+    font-size: 15px;
+}
+
+#busquedas ul {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    list-style: none;
+}
+
+    #busquedas ul li a, ul li a:visited {
+        color: #900c3f;
+
+    }
+
+    #busquedas ul li a:hover {
+        color: #8e1b48;
+    }
+
+
+div #main {
+    float: right;
+    display: block;
+    width: 75%;
+}
+
+#main div #entradas {
+    float: left;
+}
+
+#contenido #entradas a div {
+    display: block;
+    border-radius: 20px;
+    background-color:  #15151d;
+    margin: 1%;
+    height: 30%;
+    width: 54%;
+    padding: 4%;
+}
+
+#contenido div h2 {
+    color: #900c3f;
     text-align: center;
     font-size: 40px;
     font-family: MisLetras2;
 }
 
-.entradas div img {
-    width: 90%;
+#contenido div img {
+    width: 80%;
+    height: 80%;
     display: block;
     position: relative;
-    margin: 0% 5%;
+    margin: 0% 10%;
     border-radius: 30px;
 }
 
-.entradas div p {
+#contenido div p {
     font-size: 22px;
     margin: 7% 5%;
     width: 90%;
@@ -194,40 +248,52 @@ div.entradas {
     padding-bottom: 0;
 }
 
-.entradas a #blog:hover {
-    top: -120px;
-    background-color:  rgba(23, 23, 23, 1);
+#contenido #lateral {
+    float: right;
+    width: 20%;
 }
 
-.entradas a #procesadores:hover {
-    top: -120px;
-    background-color:  rgba(23, 23, 23, 1);
+aside #comentarios {
+    height: 650px;
+    width: 16%;
+    margin: 0% 1% 0%;
+    display: block;
+    border-radius: 20px;
+    background-color: #15151d;
+    top: -110px;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.entradas a #graficas:hover {
-    top: -120px;
-    background-color:  rgba(23, 23, 23, 1);
+aside div.comentarios_blog {
+    overflow-y: scroll;
+    float: right;
+    width: 16%;
+    height: 70%;
 }
 
-.entradas a #placas:hover {
-    top: -120px;
-    background-color:  rgba(23, 23, 23, 1);
+aside #comentarios h2 {
+    font-family: MisLetras2;
+    color: #3853a5;
+    font-size: 6px;
+    border-bottom: solid 1px #fcc497;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-.entradas a #blog:active {
-    background-color:  rgba(25, 25, 25, 1);
+aside #comentarios h3{
+    color: #ffa356;
+    padding: 2% 0% 1% 6%;
+    margin: 0%;
 }
 
-.entradas a #procesadores:active {
-    background-color:  rgba(25, 25, 25, 1);
-}
-
-.entradas a #graficas:active {
-    background-color:  rgba(25, 25, 25, 1);
-}
-
-.entradas a #placas:active {
-    background-color:  rgba(25, 25, 25, 1);
+aside #comentarios p{
+    padding: 0% 2% 3% 2%;
+    color: white;
+    text-align: justify;
+    font-size: 5px;
+    line-height: 30px;
+    margin: 0%;
 }
 
 footer {
@@ -244,385 +310,23 @@ footer p {
     padding: 1em 0 1em 1em;
 }
 
-@font-face {
-    font-family: MisLetras;
-    src: url("./fonts/titlesh1.ttf"); 
-}
-
-@font-face {
-    font-family: MisLetras2;
-    src: url("./fonts/Fuente2.ttf");
-}
-
-/*Diseño página BLOG*/
-
-div.fondo_blog {
-    background: url(./image/background/cover_inicio1.jpg) no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 0% 0% 20%;
-}
-
-div.entradas_blog {
-    width: 65%;
-    display: block;
-    float: left;
-    margin: 0% 2% 0% 5%;
-    padding: 0%;
-}
-
-    div.entradablog {
-        display: block;
-        margin-bottom: 6%;
-        border-radius: 20px;
-        background-color:  rgba(19, 19, 19, 1);
-        float: left;
-        width: 100%;
-        top: -110px;
-        position: relative;
-}
-    
-    div.entradablog:hover {
-        top: -120px;
-        background-color:  rgba(23, 23, 23, 1);
-    }
-
-    div.entradablog h2 {
-        padding: 2% 6%;
-        font-family: MisLetras2;
-        color: #3853a5;
-        font-size: 40px;
-        border-bottom: solid 1px #fcc497;
-        
-    }
-
-    div.entradablog p {
-        padding: 2% 8% 4% 6%;
-        color: white;
-        text-align: justify;
-        font-size: 24px;
-        border-bottom: solid 1px #fcc497;
-        line-height: 40px;
-    }
-
-time {
-    color: #fcc497;
-    padding: 0% 6%;
-    border: none;
-    font-size: 16px;
-}
-
-    #autores {
-        padding: 0% 6%;
-        color: #3853a5;
-        text-align: justify;
-        font-size: 22px;
-        border: none;
-        margin: auto auto 0%;
-    }
-
-div.entradablog footer {
-    width: 95%;
-}
-
-    div.entradablog footer p {
-        color: #fcc497;
-        border: none;
-        font-size: 16px;
-        text-align: right;
-        padding: 0% 0% 2%;
-        margin: 0%;
-    }
-
-    
-aside.lateral {
-    height: 650px;
-    width: 22%;
-    display: block;
-    float: left;
-    margin: 0% 2% 0% 2%;
-    display: block;
-    border-radius: 20px;
-    background-color:  rgba(19, 19, 19, 1);
-    top: -110px;
-    position: relative;
-    overflow-x: hidden;
-}
-
-aside.lateral:hover {
-    top: -120px;
-    background-color:  rgba(23, 23, 23, 1);
-}
-
-aside div.comentarios_blog {
-    overflow-y: scroll;
-    width: 100%;
-    height: 70%;
-}
-
-aside.lateral h2{
-    padding: 4% 6%;
-    font-family: MisLetras2;
-    color: #3853a5;
-    font-size: 30px;
-    border-bottom: solid 1px #fcc497;
-    text-align: center;
-    letter-spacing: 5px;
-}
-
-aside.lateral h3{
-    color: #ffa356;
-    padding: 2% 0% 1% 6%;
-    margin: 0%;
-}
-
-aside.lateral p{
-    padding: 0% 8% 4% 6%;
-    color: white;
-    text-align: justify;
-    font-size: 18px;
-    line-height: 40px;
-    margin: 0%;
-}
-
-
-/*Diseño página PROCESADORES*/
-
-div.fondo2 {
-    background: url(./image/procesadores/cover_cpu.jpg) no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 0% 0% 20%;
-}
-
-div.entrada_principal {
-    width: 90%;
-    display: block;
-    float: left;
-    margin: 0% 2% 0% 5%;
-    padding: 0%;
-    background-color:  rgba(19, 19, 19, 1);
-    top: -110px;
-    position: relative;
-    border-radius: 20px;
-}
-
-    div.entrada_principal:hover {
-        top: -120px;
-        background-color:  rgba(23, 23, 23, 1);
-    }
-
-    div.entrada_principal h2 {
-        color: #3853a5;
-        text-align: center;
-        font-size: 40px;
-        font-family: MisLetras2;
-    }
-
-    div.entrada_principal p {
-        font-size: 22px;
-        margin: 7% 5%;
-        width: 80%;
-        color: white;
-        text-align: justify;
-        line-height: 35px;
-        margin: 0% auto 5%;
-        padding-bottom: 0;
-    }
-
-img.imagen_principal {
-    width: 40%;
-    height: 40%;
-    display: block;
-    position: relative;
-    margin: 5% 5% 0% 30%;
-    border-radius: 30px;
-    float: center;
-}
-
-img.IntelProcesador {
-    border-radius: 50px;
-    width: 18%;
-    height: 18%;
-    margin-left: 15%;
-    margin-top: 0%;
-    margin-bottom: 5%;
-}
-
-img.RyzenProcesador {
-    border-radius: 50px;
-    width: 19%;
-    height: 19%;
-    margin-left: 5%;
-    margin-top: 0%;
-    margin-bottom: 5%;
-}
-
-img.M1Procesador {
-    border-radius: 50px;
-    width: 19%;
-    height: 19%;
-    margin-left: 5%;
-    margin-top: 0%;
-    margin-bottom: 5%;
-}
-
-iframe {
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 6%;
-}
-
-table {
-    background-color:  rgba(22, 33, 64, 1);
-    width: 80%;
-    height: 80%;
-    border-radius: 12px;
-    padding: auto;
-    margin: 0% auto 5%;
-    border-collapse: collapse;
-}
-
-table th {
-    border-bottom: solid 3px #000;
-    font: bold 18px monospace;
-    color: #ffa356;
-    text-align: center;
-    padding: 2%;
-}
-
-table td {
-        font: 14px verdana, sans-serif;
-        color: #FFF;
-        text-align: center;
-        padding: 2%;
-        }
-
-/*Contenido de pie*/
-
 #pie {
-clear: both;
-padding: 0.5%;
-text-align: center;
-border-top: 2px solid #296EE2;
-font: 10px verdana, sans-serif; 
-color: #FFFFFF
-}
-
-    #pie p {
-        margin: 0% auto;
-        border: none;
-        font: 12px verdana, sans-serif;
+    clear: both;
+    padding: 0.5%;
+    text-align: center;
+    border-top: 2px solid #900c3f;
+    font: 10px verdana, sans-serif; 
+    color: #FFFFFF
     }
-
-    img.redessociales {
-        margin-top: 1% auto 0%;
-        width: 1.5%;
-        height: 1.5%;
-    }
-
-
-/*Diseño página GRÁFICAS*/
-
-div.fondo3 {
-    background: url(./image/tarjetasgraficas/cover_gpu.jpg) no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 0% 0% 20%;
-}
-
-.entrada_principal ul {
-    width: 25%;
-    float: both;
-    display: block;
-    margin: 3% auto 5%;
-    padding: auto 50%;
-    color: white;
-    font-size: 24px;
-    line-height: 40px;
-}
-
-
-
-
-div.form_in {
-    width: 100%;
-}
-
-div.form_in article, div.form_out article {
-	font: 16px verdana, sans-serif;
-	color: #FFFFFF;
-	background-color:  rgba(19, 19, 19, 1);
-	padding: 2.6%;
-	margin: 6.45% 35% 1%;
-	border-radius: 10px;
-	text-align: center;
-}
-
-    .form_in h1 {
-        font-family: MisLetras2;
-        color: #ffa356;
-        font-size: 40px;
-    }
-
-    .form_in p {
-        padding: 0% 0% 8%;
-    }
-
-	.form_in form {
-		clear: both;
-		margin-top: 3%;
-		padding-left: auto;
-		padding-right: auto;
-	}
-
-        .form_in label {
-			display: block;
-			font: bold 20px monospace;
-			color: #3853a5;
-			padding-bottom: 1%;
-		}
-		.form_in form [type="text"], .form_in form [type="email"] {
-			display: block;
-			border-radius: 10px;
-			padding: 1%;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			border: 0;
-			margin-bottom: 4%;
-			background-color: #fcc497;
-		}
-
-		.form_in form textarea{
-			display: block;
-			border-radius: 10px;
-			padding: 10% 10% 10% 10%;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			border: 0;
-			margin-bottom: 5%;
-			background-color: #fcc497;
-		}
-
-        .form_in article:hover {
-            background-color:  rgba(23, 23, 23, 1);
+    
+        #pie p {
+            margin: 0% auto;
+            border: none;
+            font: 12px verdana, sans-serif;
         }
-
-        .form_in form input:hover, .form_in form textarea:hover {
-            background-color: #ffe1c6;
+    
+        img.redessociales {
+            margin-top: 1% auto 0%;
+            width: 1.5%;
+            height: 1.5%;
         }
-
-
-
-
-
-.form_in article p {
-    padding-top: 20%;
-}

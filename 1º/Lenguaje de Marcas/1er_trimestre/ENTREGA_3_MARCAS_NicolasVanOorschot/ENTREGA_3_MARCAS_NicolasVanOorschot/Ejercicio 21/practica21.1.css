@@ -1,0 +1,15 @@
+div {
+	border-style: outset;
+
+border-top-width: 10px;
+border-top-color: red;
+
+border-right-width: 1em;
+border-right-color: blue;
+
+border-bottom-width: thick;
+border-bottom-color: green;
+
+border-left-width: thin;
+
+}
