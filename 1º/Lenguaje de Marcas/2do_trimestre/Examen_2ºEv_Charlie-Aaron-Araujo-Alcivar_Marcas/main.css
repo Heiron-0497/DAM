@@ -1,0 +1,32 @@
+#clientes {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+    #clientes th, td {
+        border: solid red;
+        padding: 0 0.3em;
+        text-align: center;
+        height: 3em;
+    }
+
+        #clientes th {
+            background-color: #CECEF6;
+            font: comic;
+        }
+
+        #clientes tr {
+            background-color: #F5F6CE;
+        }
+
+            #clientes tr:hover {
+                background-color: #F5A9F2;
+                font-size: 15px;
+            }
+
+            #clientes tr:hover .encabezado {
+                background-color: #F5A9F2;
+                font-size: 15px;
+            }
+            
+
