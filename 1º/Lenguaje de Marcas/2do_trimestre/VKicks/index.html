@@ -30,8 +30,20 @@
                 <p >En VKicks podrás informate de primera mano de los próximos lanzamientos de sneakers de tus marcas fovoritas, así como interactuar en el blog con el resto de usuarios sneakerhead. ¿A qué esperas? ¡Únete y forma parte de la mayor comunidad sneaker del Valle de Kas!</p>
             </article>
         </div>
-        <div id="main">
+        <div id="main">            
             <div id="buscador">
+                <div id="inicio-sesion">
+                    <h2>Iniciar sesión</h2>
+                    <form onsubmit="return validarFormulario()">
+                        <label for="username">E-mail:</label><br />
+                        <input type="text" id="username" name="username"><br /><br />
+                
+                        <label for="password">Contraseña:</label><br />
+                        <input type="password" id="password" name="password"><br />
+                
+                        <button type="submit" id="btn-iniciar">Iniciar sesión</button>
+                    </form>
+                </div>                
                 <div id="busquedas">
                     <form action="#" method="post">
                         <label for="busqueda">Buscar</label> &nbsp;
@@ -44,6 +56,22 @@
                         <li><a href="">New Balance 550</a></li>
                         <li><a href="">Air Jordan 4</a></li>
                     </ul>
+                </div>
+                <div id="productos">
+                    <h2>Productos</h2>
+                    <select id="select-producto">
+                        <option value="Llavero Jordan - 5€">Llavero Jordan - 5€</option>
+                        <option value="Llavero Supreme - 5€">Llavero Supreme - 5€</option>
+                        <option value="Gorra VKicks - 20€">Gorra VKicks - 20€</option>
+                        <option value="Poster del mes - 3€">Poster del mes - 3€</option>
+                    </select>
+                    <button id="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div id="carrito">
+                    <h2>Carrito de compra</h2>
+                    <div id="items-carrito"></div>
+                    <div id="total-carrito"></div>
+                    <button id="vaciar-carrito">Vaciar carrito</button>
                 </div>
             </div>
             <div id="contenido">
@@ -132,4 +160,5 @@
         </footer>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
